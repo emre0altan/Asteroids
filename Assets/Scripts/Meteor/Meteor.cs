@@ -7,7 +7,6 @@ public enum MeteorType { Big, Medium, Small}
 public class Meteor : MonoBehaviour
 {
     public MeteorType meteorType;
-    public float damageAmount = 10;
 
     private MeteorMovement m_MeteorMovement;
     private int m_SpawnIndex;
@@ -19,6 +18,7 @@ public class Meteor : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D other) {
         if(other.gameObject.layer == 7) {
             DivideMeteor();
+            ShipAttack.Instance.ProjectileRePool(other.GetComponent<Projectile>());
         }
     }
 

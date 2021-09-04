@@ -12,4 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 72cc6468fa888204e9fca86da20f8b03, type: 3}
   m_Name: Level1
   m_EditorClassIdentifier: 
-  bigMeteorCount: 4
+  bigMeteorCount: 2
